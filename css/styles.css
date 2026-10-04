@@ -39,7 +39,7 @@ h1, h2, h3 {
   color: var(--indigo);
 }
 
-.contenedor { width: min(var(--ancho), 100% - 2.5rem); margin-inline: auto; }
+.contenedor { width: 100%; max-width: calc(var(--ancho) + 2.5rem); margin: 0 auto; padding: 0 1.25rem; }
 
 /* ===== Encabezado ===== */
 .cabecera { padding: 1.25rem 0 0; }
@@ -89,30 +89,31 @@ h1, h2, h3 {
 }
 
 /* ===== Páginas interiores ===== */
-.pagina { padding: 3.5rem 0 4rem; }
-.pagina__grilla {
-  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: 3rem; align-items: start;
-}
+.pagina { padding: 3rem 0 4.5rem; }
+.pagina__grilla { display: flex; gap: 3.5rem; align-items: flex-start; }
+.texto { flex: 1 1 auto; min-width: 0; max-width: 640px; }
 .pagina h1 {
-  font-size: clamp(2.4rem, 5vw, 3.4rem); color: var(--naranja);
-  margin-bottom: 1.2rem;
+  font-size: 2.5rem; font-weight: 800; color: var(--naranja);
+  letter-spacing: .02em; margin-bottom: 1rem;
 }
-.texto p { margin-bottom: 1.1rem; max-width: 62ch; }
-.texto h2 { font-size: 1.6rem; margin: 2rem 0 .6rem; }
-.texto a { font-weight: 700; }
+.texto p { font-size: 1.06rem; line-height: 1.7; margin-bottom: 1rem; }
+.texto h2 { font-size: 1.35rem; margin: 2.2rem 0 .5rem; }
+.texto a { color: var(--indigo); font-weight: 700; text-underline-offset: 3px; }
 .destacado {
-  background: var(--rana-suave); border-left: 6px solid var(--rana);
-  padding: 1.2rem 1.4rem; border-radius: 0 14px 14px 0;
-  margin: 1.4rem 0; font-weight: 700; max-width: 62ch;
+  border-left: 4px solid var(--rana); padding: .2rem 0 .2rem 1.2rem; margin: 1.6rem 0;
+  font-family: "Baloo 2", sans-serif; font-size: 1.2rem; line-height: 1.45;
+  font-weight: 600; color: var(--indigo);
 }
-.nota { color: var(--gris); font-size: 1rem; margin-top: .9rem; }
-.fotos { display: grid; gap: 1.5rem; position: sticky; top: 1.5rem; }
-.fotos img {
-  width: 100%; border-radius: var(--radio);
-  height: auto; background: var(--naranja-suave);
-  box-shadow: 0 0 0 6px var(--rana-suave);
+.descarga {
+  margin-top: 2.4rem; padding-top: 1.6rem; border-top: 1px solid #e6e7ef;
 }
+.descarga p { margin-bottom: .9rem; }
+.descarga .tienda { padding: .45rem 1rem .45rem .85rem; border-radius: 10px; }
+.descarga .tienda i { font-size: 1.4rem; }
+.descarga .tienda strong { font-size: 1rem; }
+.nota { color: var(--gris); font-size: .95rem; margin-top: .9rem; }
+.fotos { flex: 0 0 380px; position: sticky; top: 2rem; }
+.fotos img { width: 100%; height: auto; border-radius: 14px; }
 
 /* ===== Portada ===== */
 .portada { padding: 3.5rem 0 3rem; }
@@ -194,8 +195,10 @@ h1, h2, h3 {
   .app__rana { width: 130px; }
   .cita__libro { width: 120px; }
   .marca__lema { display: none; }
-  .pagina__grilla { grid-template-columns: 1fr; }
-  .fotos { position: static; }
+  .pagina__grilla { flex-direction: column; gap: 1.5rem; }
+  .fotos { position: static; flex-basis: auto; width: 100%; max-width: 480px; order: -1; }
+  .texto { max-width: none; }
+  .pagina h1 { font-size: 2.1rem; }
   .nav__lista { flex-wrap: wrap; }
   .nav__lista > li { flex: 1 1 50%; }
   .nav__lista > li.submenu { flex-basis: 100%; }
