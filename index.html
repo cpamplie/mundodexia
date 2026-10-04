@@ -1,118 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mundo Dexia · Primeros pasos en la lectura y escritura</title>
-  <meta name="description" content="DEXIA KIDS es una app de estimulación cognitiva para mejorar el habla, la lectura y la escritura en español en niños de 3 a 8 años.">
-  <link rel="icon" href="img/logo-dexia.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEXIA KIDS — Estimulación temprana para leer y escribir en español</title>
+<meta name="description" content="DEXIA KIDS es una app gratuita de estimulación temprana para chicos de 3 a 8 años. Enseña a leer y escribir en español a partir de los sonidos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header class="cabecera">
-  <div class="contenedor cabecera__fila">
-    <a class="marca" href="index.html">
-      <img src="img/logo-dexia.png" alt="Rana de DEXIA">
-      <span>
-        <span class="marca__nombre">DEXIA</span>
-      </span>
-      <span class="marca__lema">Primeros pasos en la lectura y escritura</span>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="https://static.wixstatic.com/media/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png/v1/fill/w_473,h_142,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png" alt="Dexia Kids">
+      <span class="brand-tagline">Primeros pasos en la<br>lectura y escritura</span>
     </a>
-
-    <ul class="redes" aria-label="Redes sociales">
-      <li><a href="https://www.facebook.com/mundodexia/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-      <li><a href="https://www.instagram.com/mundodexia/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-      <li><a href="https://www.youtube.com/watch?v=zu9OEpm8Xig" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
-      <li><a href="mailto:pampliega.carolina@gmail.com" aria-label="Enviar un mail"><i class="fa-solid fa-envelope"></i></a></li>
-    </ul>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="app.html">La app</a>
+      <a href="lectura-escritura.html">Lectura y escritura</a>
+      <a href="contacto.html">Contacto</a>
+      <div class="nav-cta">
+        <a class="btn btn--coral" href="app.html#descargar">Descargar la app</a>
+      </div>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
-
-  <nav class="nav" aria-label="Principal">
-    <ul class="contenedor nav__lista">
-      <li><a href="index.html" aria-current="page">Inicio</a></li>
-      <li class="submenu"><button class="nav__toggle" type="button" aria-expanded="false" aria-haspopup="true">DEXIA KIDS App</button>
-        <ul class="nav__sub">
-          <li><a href="padres.html">Padres</a></li>
-          <li><a href="profesionales.html">Profesionales</a></li>
-        </ul>
-      </li>
-      <li><a href="lectura.html">La lectura y la escritura</a></li>
-      <li><a href="quienes-somos.html">Quiénes somos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
 </header>
 
 <main>
-  <section class="portada">
-    <div class="contenedor portada__grilla">
-      <div class="compromiso">
-        <h1>Nuestro compromiso</h1>
-        <p>Si el niño no puede aprender de la forma en que se enseña, buscaremos desarrollar herramientas que enseñen de la forma en que ellos aprenden.</p>
-      </div>
 
-      <div class="video">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/zu9OEpm8Xig?autoplay=1&mute=1&playsinline=1&rel=0"
-          title="Video de presentación de Mundo Dexia"
-                    allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section class="app" aria-labelledby="titulo-app">
-    <div class="contenedor app__grilla">
-      <img class="app__rana" src="img/logo-dexia.png" alt="">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
       <div>
-        <h2 id="titulo-app">DEXIA KIDS ya está disponible</h2>
-        <p>DEXIA KIDS es una app de estimulación cognitiva para mejorar el habla, la lectura y la escritura en español en niños de 3 a 8 años.</p>
-        <div class="tiendas">
-          <a class="tienda" href="https://apps.apple.com/app/dexia-kids/id1349892989">
-            <i class="fa-brands fa-apple"></i>
-            <span><small>Descargala en</small><strong>App Store</strong></span>
+        <p class="eyebrow">Estimulación temprana en español</p>
+        <h1>Antes de leer, los chicos escuchan. <span class="chalk">DEXIA KIDS<svg viewBox="0 0 220 20" preserveAspectRatio="none"><path d="M4 14 Q 55 2, 110 12 T 216 8"/></svg></span> les enseña a jugar con los sonidos.</h1>
+        <p class="lede">Es una app gratuita pensada para chicos de 3 a 8 años, con tres niveles de dificultad. En vez de arrancar por las letras, arranca por algo que todo chico ya sabe hacer: escuchar y jugar con los sonidos del habla. Ese camino —más intuitivo y más fácil— es la puerta de entrada a la lectura y la escritura.</p>
+        <div class="store-row">
+          <a class="store-badge" href="https://itunes.apple.com/us/app/dexia-full/id1349892989?mt=8" target="_blank" rel="noopener">
+            <img src="https://static.wixstatic.com/media/8993c3_12afd940e8d34fdb99fed397975f9d10~mv2.png/v1/fill/w_179,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/App%20Store.png" alt="Descargar en App Store">
           </a>
-          <a class="tienda" href="https://play.google.com/store/apps/details?id=com.dexiaapp.DexiaFull">
-            <i class="fa-brands fa-google-play"></i>
-            <span><small>Disponible en</small><strong>Google Play</strong></span>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.dexiaapp.DexiaFull" target="_blank" rel="noopener">
+            <img src="https://static.wixstatic.com/media/8993c3_7add2d22be8a418fb6ee253dbc9ba1a4~mv2.png/v1/fill/w_147,h_55,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8993c3_7add2d22be8a418fb6ee253dbc9ba1a4~mv2.png" alt="Descargar en Google Play">
           </a>
+        </div>
+        <p class="contact-note">Gratis. No necesita conexión Wi-Fi una vez instalada. <a href="app.html#demo" style="text-decoration:underline;">Mirá cómo funciona →</a></p>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-art-card">
+          <div class="soundwave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="letter-blocks" aria-hidden="true">
+            <span>D</span><span>E</span><span>X</span>
+          </div>
+          <p class="hero-art-caption">Del sonido a la letra, en tres niveles</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cita" aria-label="Opinión de una especialista">
-    <div class="contenedor cita__grilla">
-      <blockquote>
-        <p>“Hay habilidades que son fundamentales para aprender a leer. Entre ellas se encuentran la capacidad para discernir los sonidos dentro de las palabras. DEXIA KIDS es una aplicación que enseña estas habilidades fundamentales en una forma entretenida. Los niños aprenden con rimas, sílabas, letras y sonidos a través de esta aplicación. Estas habilidades deben enseñarse temprano y DEXIA KIDS es una excelente manera de hacerlo.”</p>
-        <footer>
-          <strong>Linda Siegel, PhD</strong>
-          Autora de <cite>Understanding Dyslexia and Other Learning Disabilities</cite>
-        </footer>
-      </blockquote>
-      <img class="cita__libro" src="img/libro-linda-siegel.jpg" alt="Tapa del libro Understanding Dyslexia and Other Learning Disabilities">
+  <!-- POR QUÉ IMPORTA -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <p class="eyebrow">Por qué importa la estimulación temprana</p>
+      <h2 style="max-width:680px;">Los primeros años dejan huella en cómo aprende un chico</h2>
+      <div class="grid grid--2" style="margin-top:36px;">
+        <div>
+          <p class="lede" style="font-size:18px;">Está comprobado científicamente: un chico estimulado en sus primeros años de vida desarrolla mejor sus capacidades cognitivas y rinde mejor en la escuela. No se trata de apurar etapas, sino de ofrecerle, desde temprano, un entorno rico en sonidos, palabras y juego.</p>
+        </div>
+        <div>
+          <p style="font-size:18px;color:var(--ink-soft);">Cerca del <span class="stat-inline">75%</span> de los chicos que llegan a 2º grado con dificultades de lectura tuvieron, en su primera infancia, poca estimulación. La intervención temprana —no esperar a que aparezcan las dificultades— es lo que marca la diferencia.</p>
+          <p><a href="lectura-escritura.html" style="font-weight:700;text-decoration:underline;">Conocé las habilidades esperadas por edad →</a></p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- VISTA PREVIA -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Educando a través del juego</p>
+      <h2>Así se ve DEXIA KIDS por dentro</h2>
+      <p class="lede">Rimas, sílabas, letras y sonidos, presentados como un juego. Cada nivel suma un poco más de complejidad, al ritmo del chico.</p>
+      <div class="shot-strip" style="margin-top:30px;">
+        <img src="https://static.wixstatic.com/media/8993c3_6ab1cbe81c7e472689291a5263c133bb~mv2.png/v1/fill/w_356,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_6ab1cbe81c7e472689291a5263c133bb~mv2.png" alt="Pantalla de la app DEXIA KIDS">
+        <img src="https://static.wixstatic.com/media/8993c3_7ecc49bc53a74d3ab8191db927d418aa~mv2.png/v1/fill/w_356,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_7ecc49bc53a74d3ab8191db927d418aa~mv2.png" alt="Pantalla de la app DEXIA KIDS">
+        <img src="https://static.wixstatic.com/media/8993c3_240201f1eb424642b64b82d54b7e2c66~mv2.png/v1/fill/w_356,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_240201f1eb424642b64b82d54b7e2c66~mv2.png" alt="Pantalla de la app DEXIA KIDS">
+        <img src="https://static.wixstatic.com/media/8993c3_e9097d61c4394b1aaded10de614585bf~mv2.png/v1/fill/w_250,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_e9097d61c4394b1aaded10de614585bf~mv2.png" alt="Pantalla de la app DEXIA KIDS">
+        <img src="https://static.wixstatic.com/media/8993c3_00d1a45cc1f949279de04c50868cca47~mv2.png/v1/fill/w_286,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_00d1a45cc1f949279de04c50868cca47~mv2.png" alt="Pantalla de la app DEXIA KIDS">
+        <img src="https://static.wixstatic.com/media/8993c3_3f689c8eae914ce6b4beee6ab9b3272a~mv2.png/v1/fill/w_212,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_3f689c8eae914ce6b4beee6ab9b3272a~mv2.png" alt="Pantalla de la app DEXIA KIDS">
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="section">
+    <div class="wrap">
+      <div class="quote-panel">
+        <img src="https://static.wixstatic.com/media/8993c3_26471946ca6a4161bc17934742dda3d9~mv2.jpg/v1/fill/w_140,h_213,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/understanding-dyslexia-and-other-learnin.jpg" alt="Understanding Dyslexia and Other Learning Disabilities, de Linda Siegel">
+        <div>
+          <span class="quote-mark">&ldquo;</span>
+          <blockquote>Hay habilidades fundamentales para aprender a leer, como distinguir los sonidos dentro de las palabras. DEXIA KIDS enseña estas habilidades de forma entretenida, con rimas, sílabas, letras y sonidos. Deben trabajarse temprano, y esta app es una excelente manera de hacerlo.</blockquote>
+          <p class="quote-cite"><strong>Linda Siegel, PhD</strong>Autora de "Understanding Dyslexia and Other Learning Disabilities"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROXIMOS PASOS -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <p class="eyebrow">Seguí explorando</p>
+      <h2 class="mt-0">¿Por dónde querés empezar?</h2>
+      <div class="grid grid--2" style="margin-top:34px;">
+        <a class="card" href="app.html">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="2.5"/><line x1="10" y1="18.3" x2="14" y2="18.3"/></svg></div>
+          <h3>Conocé la app</h3>
+          <p style="color:var(--ink-soft);margin-bottom:0;">Niveles, método y video demo. Para familias y para profesionales.</p>
+        </a>
+        <a class="card" href="lectura-escritura.html">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5C6 4.3 9 4 12 5v14c-3-1-6-.7-8 .5V5.5Z"/><path d="M20 5.5C18 4.3 15 4 12 5v14c3-1 6-.7 8 .5V5.5Z"/></svg></div>
+          <h3>Lectura y escritura</h3>
+          <p style="color:var(--ink-soft);margin-bottom:0;">Habilidades esperadas por edad y señales de alerta de dislexia.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer class="pie">
-  <div class="contenedor pie__fila">
-    <p>© 2026 Mundo Dexia · <a href="mailto:pampliega.carolina@gmail.com">pampliega.carolina@gmail.com</a></p>
-    <ul class="redes" aria-label="Redes sociales">
-      <li><a href="https://www.facebook.com/mundodexia/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-      <li><a href="https://www.instagram.com/mundodexia/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-      <li><a href="https://www.youtube.com/watch?v=zu9OEpm8Xig" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
-      <li><a href="mailto:pampliega.carolina@gmail.com" aria-label="Enviar un mail"><i class="fa-solid fa-envelope"></i></a></li>
-    </ul>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="https://static.wixstatic.com/media/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png/v1/fill/w_473,h_142,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png" alt="Dexia Kids" style="height:38px;margin-bottom:16px;filter:brightness(0) invert(1);opacity:.92;">
+        <p style="max-width:320px;">DEXIA KIDS es una app gratuita de estimulación temprana para la lectura y la escritura en español, para chicos de 3 a 8 años.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/mundodexia/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h2.5V6.2c-.4-.06-1.4-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5V13H7v3h2.5v8h3.2v-8h2.6l.4-3h-3V10.6c0-.9.3-1.6 1.3-1.6Z"/></svg></a>
+          <a href="https://www.instagram.com/mundodexia/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.4" cy="7.6" r="0.8" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.youtube.com/watch?v=QjuMi4AyqLo" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6.5" width="18" height="11" rx="3.5"/><path d="M10.5 9.6 14.8 12l-4.3 2.4Z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://apps.apple.com/id/app/dexia-kids/id1349892989" aria-label="App Store" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M16.4 12.3c0-2 1.6-3 1.7-3.1-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.3.7-2.9.7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.5 2.1 2.6 2.1 1 0 1.4-.7 2.6-.7s1.6.7 2.6.6c1.1 0 1.8-1 2.5-2 .6-.9 1-1.7 1.3-2.5-1.4-.6-2.6-2-2.6-3.8Zm-3-6.6c.5-.7.9-1.6.8-2.6-.8 0-1.8.5-2.4 1.2-.5.6-.9 1.5-.8 2.4.9.1 1.9-.4 2.4-1Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="app.html">La app</a></li>
+          <li><a href="lectura-escritura.html">Lectura y escritura</a></li>
+          <li></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="contacto.html">Enviar un mensaje</a></li>
+          <li>Buenos Aires, Argentina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mundo Dexia. Todos los derechos reservados.</span>
+      <a href="terminos.html">Términos y condiciones</a>
+    </div>
   </div>
 </footer>
 
-<script src="js/menu.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

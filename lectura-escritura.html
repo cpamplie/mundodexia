@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lectura y escritura — DEXIA KIDS</title>
+<meta name="description" content="La importancia de la intervención temprana, habilidades de lectura esperadas por edad y señales de alerta de posible dislexia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .habilidades-list{padding-left:20px;color:var(--ink-soft);margin:4px 0 0;}
+  .habilidades-list li{padding:4px 0;line-height:1.5;}
+  .charla-card{
+    display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;
+    background:var(--pizarra);border-radius:24px;padding:40px;overflow:hidden;
+  }
+  @media(max-width:760px){.charla-card{grid-template-columns:1fr;gap:24px;padding:28px;}}
+  .charla-card img.flyer{width:100%;max-width:420px;border-radius:16px;box-shadow:var(--shadow);}
+  .charla-meta{color:#D7E2DD;}
+  .charla-meta h2{color:#FBF4EA;font-size:clamp(22px,3vw,30px);margin-bottom:10px;}
+  .charla-meta .subtitle{font-size:15px;color:#A8C4BB;margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em;}
+  .charla-meta .speakers{font-size:16px;color:#FBF4EA;font-weight:600;margin-bottom:24px;}
+  .dm-logo{margin-top:20px;filter:brightness(0) invert(1);opacity:.75;height:54px;}
+  .signos-grid{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start;}
+  @media(max-width:760px){.signos-grid{grid-template-columns:1fr;}}
+  .signos-grid img{width:260px;border-radius:18px;flex:0 0 auto;}
+  .einstein-box{
+    background:var(--tiza-celeste);border-radius:20px;padding:32px 36px;
+    max-width:440px;margin-top:28px;
+  }
+  .einstein-box p{font-family:var(--font-display);font-size:18px;color:var(--pizarra-2);margin-bottom:10px;line-height:1.45;}
+  .einstein-box cite{font-size:14px;font-weight:700;color:var(--pizarra-2);font-style:normal;}
+  .quick-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px;margin-bottom:48px;}
+  .quick-nav a{
+    padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;
+    border:1px solid var(--linea);color:var(--pizarra-2);
+  }
+  .quick-nav a:hover{background:var(--paper-alt);}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="https://static.wixstatic.com/media/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png/v1/fill/w_473,h_142,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png" alt="Dexia Kids">
+      <span class="brand-tagline">Primeros pasos en la<br>lectura y escritura</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="app.html">La app</a>
+      <a href="lectura-escritura.html">Lectura y escritura</a>
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="contacto.html">Contacto</a>
+      <div class="nav-cta">
+        <a class="btn btn--coral" href="app.html#descargar">Descargar la app</a>
+      </div>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== INTERVENCIÓN TEMPRANA ===== -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <p class="eyebrow">Importancia de la intervención temprana</p>
+      <h1 style="max-width:720px;">Lo que se aprende en la primera infancia <span class="chalk">deja huella para siempre<svg viewBox="0 0 330 22" preserveAspectRatio="none"><path d="M4 16 Q 80 2, 165 14 T 326 10"/></svg></span></h1>
+
+      <div class="quick-nav">
+        <a href="#habilidades">↓ Habilidades por edad</a>
+        <a href="#signos">↓ Signos de dislexia</a>
+        <a href="#charla">↓ Charla Fundación DM</a>
+      </div>
+
+      <div class="grid grid--2" style="align-items:center;gap:44px;">
+        <div>
+          <p style="font-size:18px;">La investigación sobre el cerebro en desarrollo demuestra que las experiencias en la infancia temprana construyen los cimientos para una vida plena como adulto.</p>
+          <p style="font-size:18px;color:var(--ink-soft);">La evidencia reciente ha identificado las habilidades en el lenguaje, la lectura y la escritura como esenciales para el éxito escolar y para la adaptación a la sociedad como adultos.</p>
+          <p>Para profundizar, el <a href="https://developingchild.harvard.edu/about/" target="_blank" rel="noopener" style="font-weight:700;text-decoration:underline;">Center on the Developing Child de Harvard</a> es una referencia internacional.</p>
+          <a href="https://8f32ec03-f076-4a65-b585-dd7911a40dbb.filesusr.com/ugd/8993c3_a3359b09e9834b388b4d039fb4240745.pdf" target="_blank" rel="noopener" class="card" style="display:flex;gap:16px;align-items:center;padding:16px 20px;margin-top:22px;text-decoration:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--tiza-coral)" stroke-width="1.8" style="width:32px;flex:0 0 auto;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg>
+            <span style="font-weight:700;color:var(--pizarra-2);">Descargar: Anticiparse a la frustración en el niño (PDF)</span>
+          </a>
+        </div>
+        <div>
+          <img src="assets/img/cerebro-harvard.png" alt="Gráfico del Center on the Developing Child de Harvard University: Desarrollo del cerebro humano" style="border-radius:16px;border:1px solid var(--linea);">
+          <p style="font-size:12px;color:var(--ink-soft);margin-top:8px;text-align:center;">Fuente: Center on the Developing Child, Harvard University (C.A. Nelson, 2000)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES POR EDAD ===== -->
+  <section id="habilidades" class="section section--alt">
+    <div class="wrap">
+      <p class="eyebrow">Solo a modo de referencia</p>
+      <h2 class="mt-0">Habilidades de lectura esperadas por edad</h2>
+      <p class="lede">Los niños desarrollan habilidades de lectura que sientan las bases para aprender a leer. Al comienzo el acercamiento a la lectura es de forma más literal. Con la práctica, el niño empieza a leer priorizando el sentido. La lista debajo es solo de referencia: los niños desarrollan sus habilidades a su propio ritmo y pueden no ajustarse a esta lista.</p>
+
+      <div style="margin-top:32px;background:#fff;border-radius:var(--radius);border:1px solid var(--linea);overflow:hidden;">
+
+        <details class="accordion-item">
+          <summary class="accordion-head">
+            <span><span class="age-range">0 a 12 meses</span>Bebés</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <div class="accordion-body"><ul class="habilidades-list">
+            <li>Mira y toca las imágenes de los libros.</li>
+            <li>Responde a un libro de cuentos arrullando o haciendo sonidos.</li>
+            <li>Ayuda a pasar las páginas.</li>
+          </ul></div>
+        </details>
+
+        <details class="accordion-item">
+          <summary class="accordion-head">
+            <span><span class="age-range">1 a 2 años</span>Niños pequeños</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <div class="accordion-body"><ul class="habilidades-list">
+            <li>Nombra los elementos que ve.</li>
+            <li>Mira imágenes y nombra elementos familiares, como perro, taza y bebé.</li>
+            <li>Responde preguntas sobre lo que ven en los libros.</li>
+            <li>Reconoce las tapas de sus libros favoritos.</li>
+            <li>Recita las palabras de sus libros favoritos.</li>
+            <li>Empieza a fingir que está pasando las páginas e inventando historias.</li>
+          </ul></div>
+        </details>
+
+        <details class="accordion-item">
+          <summary class="accordion-head">
+            <span><span class="age-range">3 a 4 años</span>Niños en edad preescolar</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <div class="accordion-body"><ul class="habilidades-list">
+            <li>Conoce la forma correcta de sostener y manipular un libro.</li>
+            <li>Comprende que las palabras se leen de izquierda a derecha y las páginas se leen de arriba a abajo.</li>
+            <li>Empieza a notar palabras que riman.</li>
+            <li>Contar historias.</li>
+            <li>Reconoce aproximadamente la mitad de las letras del alfabeto.</li>
+            <li>Empieza a hacer coincidir los sonidos de las letras con las letras (como saber que b produce un sonido /b/).</li>
+            <li>Puede comenzar a reconocer su nombre impreso y otras palabras que se ven con frecuencia, como las de los letreros y logotipos.</li>
+          </ul></div>
+        </details>
+
+        <details class="accordion-item">
+          <summary class="accordion-head">
+            <span><span class="age-range">5 años</span>Niños de jardín de infantes</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <div class="accordion-body"><ul class="habilidades-list">
+            <li>Hace coincidir cada letra con el sonido que representa.</li>
+            <li>Identifica los sonidos iniciales, medios y finales en palabras habladas como perro o sentarse.</li>
+            <li>Empieza a relacionar las palabras que escuchan con las palabras que ven en la página.</li>
+            <li>Pronuncia palabras sencillas.</li>
+            <li>Empieza a reconocer algunas palabras de vista sin tener que pronunciarlas.</li>
+            <li>Pregunta y responde preguntas de quién, qué, dónde, cuándo, por qué y cómo sobre una historia.</li>
+            <li>Vuelve a contar una historia en orden, usando palabras o imágenes.</li>
+            <li>Predice lo que sucede a continuación en una historia.</li>
+            <li>Empieza a leer o pedir que le lean libros para informarse y divertirse.</li>
+            <li>Usa el lenguaje de la historia durante el tiempo de juego o la conversación (como "¡Puedo volar!", Dijo el dragón. "¡Puedo volar!").</li>
+          </ul></div>
+        </details>
+
+        <details class="accordion-item">
+          <summary class="accordion-head">
+            <span><span class="age-range">6 a 7 años</span>Niños de primaria</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <div class="accordion-body"><ul class="habilidades-list">
+            <li>Aprende las reglas de ortografía.</li>
+            <li>Sigue aumentando la cantidad de palabras que reconoce a simple vista.</li>
+            <li>Mejora la velocidad y la fluidez de la lectura.</li>
+            <li>Utiliza pistas de contexto para pronunciar y comprender palabras desconocidas.</li>
+            <li>Regresa y vuelve a leer una palabra u oración que no tenga sentido (autocontrol).</li>
+            <li>Conecta lo que están leyendo con experiencias personales, otros libros que han leído y eventos mundiales.</li>
+          </ul></div>
+        </details>
+
+        <details class="accordion-item">
+          <summary class="accordion-head">
+            <span><span class="age-range">8 a 10 años</span>Estudiantes de primaria</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <div class="accordion-body"><ul class="habilidades-list">
+            <li>Comienza a reconocer y fijar reglas ortográficas.</li>
+            <li>Predice sobre prefijos, sufijos y palabras raíz, como las de útil, indefenso e inútil.</li>
+            <li>Lee con diferentes propósitos (para disfrutar, aprender algo nuevo, descubrir direcciones, etc.).</li>
+            <li>Explora diferentes géneros.</li>
+            <li>Describe el escenario, los personajes, el problema/solución y la trama de una historia.</li>
+            <li>Identifica y resume la secuencia de eventos en una historia.</li>
+            <li>Identifica el tema principal y comienza a identificar temas menores.</li>
+            <li>Hace inferencias ("leer entre líneas") utilizando pistas del texto y conocimientos previos.</li>
+            <li>Compara y contrasta información de diferentes textos.</li>
+            <li>Comprende metáforas y otros recursos descriptivos.</li>
+          </ul></div>
+        </details>
+
+        <details class="accordion-item" style="border-bottom:none;">
+          <summary class="accordion-head">
+            <span><span class="age-range">Secundaria</span>Estudiantes de secundaria</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <div class="accordion-body"><ul class="habilidades-list">
+            <li>Sigue ampliando el vocabulario y leyendo textos más complejos.</li>
+            <li>Analiza cómo los personajes se desarrollan, interactúan entre sí y avanzan en la trama.</li>
+            <li>Determina temas y analiza cómo se desarrollan a lo largo del texto.</li>
+            <li>Usa evidencia del texto para apoyar el análisis del texto.</li>
+            <li>Identifica imágenes y simbolismo en el texto.</li>
+            <li>Analiza, sintetiza y evalúa ideas del texto.</li>
+            <li>Comprende la sátira, el sarcasmo, la ironía y la subestimación.</li>
+          </ul></div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIGNOS ===== -->
+  <section id="signos" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Señales de alerta</p>
+      <h2 class="mt-0">Signos de posible dislexia</h2>
+      <p class="lede" style="max-width:640px;">Esta lista es orientativa, no un diagnóstico. Si reconocés varias de estas señales en tu hijo o alumno, lo más útil es consultar a un fonoaudiólogo, psicopedagogo o psicólogo.</p>
+
+      <div class="signos-grid" style="margin-top:28px;">
+        <div>
+          <ul class="checklist">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Ausencia de palabras al año y medio de edad.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Dificultad para aprender el nombre de las letras y recordar su sonido.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Omitir o sustituir el final de una palabra al leer y al escribir.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Dificultad para reconocer e individualizar los sonidos en las palabras.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Tener dificultad para reconocer y reproducir rimas.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Sustituir palabras en la lectura.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Dificultad para aprender palabras nuevas.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Pronunciar palabras incorrectamente. Por ejemplo decir "datón" en lugar de "ratón".</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Evitar nombrar objetos familiares a simple vista, diciendo con frecuencia "eso" o "esto" en lugar de nombrar aquello que se quiere decir.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.3 2.3 4.7-5"/></svg>Dificultad para recordar cómo se escriben las palabras y la aplicación de las reglas ortográficas al escribir.</li>
+          </ul>
+
+          <div class="einstein-box">
+            <p>"Todos somos unos genios. Pero si juzgas a un pez por su habilidad para escalar un árbol, vivirá su vida creyendo que es un tonto."</p>
+            <cite>— Albert Einstein</cite>
+          </div>
+        </div>
+
+        <img src="assets/img/chico.png" alt="Niño con dificultades de lectura" style="border-radius:18px;box-shadow:var(--shadow);">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHARLA FUNDACIÓN DM ===== -->
+  <section id="charla" class="section section--alt">
+    <div class="wrap">
+      <p class="eyebrow">Charla Fundación Diagnóstico Maipú</p>
+      <h2 class="mt-0">Estimulación Temprana de la Lectoescritura</h2>
+
+      <div class="charla-card">
+        <div>
+          <img src="assets/img/flyer-charla.png" alt="Flyer: Estimulación Temprana de la Lectoescritura — Fundación Diagnóstico Maipú y Mundo Dexia" class="flyer">
+        </div>
+        <div class="charla-meta">
+          <p class="subtitle">Junto a Mundo Dexia</p>
+          <h2>Estimulación Temprana de la Lectoescritura</h2>
+          <p style="color:#A8C4BB;font-size:16px;margin-bottom:16px;">Fomentar el amor por leer y escribir como base para una vida plena y feliz.</p>
+          <p class="speakers">Dra. Isabel Galli · Lic. Carolina Pampliega</p>
+          <a href="https://www.youtube.com/watch?v=R3Esh0PkLeY" target="_blank" rel="noopener" class="btn btn--coral" style="display:inline-flex;gap:10px;align-items:center;">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;"><path d="M19.6 7.2a2.5 2.5 0 0 0-1.75-1.77C16.25 5 12 5 12 5s-4.25 0-5.85.43A2.5 2.5 0 0 0 4.4 7.2 26 26 0 0 0 4 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.75 1.77C7.75 19 12 19 12 19s4.25 0 5.85-.43a2.5 2.5 0 0 0 1.75-1.77A26 26 0 0 0 20 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3-5.2 3Z"/></svg>
+            Acceder a la charla
+          </a>
+          <img src="assets/img/diagnostico-maipu.jpg" alt="Fundación Diagnóstico Maipú" class="dm-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="https://static.wixstatic.com/media/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png/v1/fill/w_473,h_142,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8993c3_bc2e306ba96b47a5957c249f4f283586~mv2.png" alt="Dexia Kids" style="height:38px;margin-bottom:16px;filter:brightness(0) invert(1);opacity:.92;">
+        <p style="max-width:320px;">DEXIA KIDS es una app gratuita de estimulación temprana para la lectura y la escritura en español, para chicos de 3 a 8 años.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/mundodexia/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h2.5V6.2c-.4-.06-1.4-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5V13H7v3h2.5v8h3.2v-8h2.6l.4-3h-3V10.6c0-.9.3-1.6 1.3-1.6Z"/></svg></a>
+          <a href="https://www.instagram.com/mundodexia/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.4" cy="7.6" r="0.8" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.youtube.com/watch?v=QjuMi4AyqLo" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6.5" width="18" height="11" rx="3.5"/><path d="M10.5 9.6 14.8 12l-4.3 2.4Z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://apps.apple.com/id/app/dexia-kids/id1349892989" aria-label="App Store" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M16.4 12.3c0-2 1.6-3 1.7-3.1-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.3.7-2.9.7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.5 2.1 2.6 2.1 1 0 1.4-.7 2.6-.7s1.6.7 2.6.6c1.1 0 1.8-1 2.5-2 .6-.9 1-1.7 1.3-2.5-1.4-.6-2.6-2-2.6-3.8Zm-3-6.6c.5-.7.9-1.6.8-2.6-.8 0-1.8.5-2.4 1.2-.5.6-.9 1.5-.8 2.4.9.1 1.9-.4 2.4-1Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="app.html">La app</a></li>
+          <li><a href="lectura-escritura.html">Lectura y escritura</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:mundodexia@gmail.com">mundodexia@gmail.com</a></li>
+          <li><a href="contacto.html">Enviar un mensaje</a></li>
+          <li>Buenos Aires, Argentina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mundo Dexia. Todos los derechos reservados.</span>
+      <a href="terminos.html">Términos y condiciones</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
