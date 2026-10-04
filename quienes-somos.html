@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/jpeg" href="rana.jpg">
+<link rel="icon" type="image/png" href="img/favicon-rana.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quiénes somos, DEXIA KIDS</title>
 <meta name="description" content="El equipo detrás de DEXIA KIDS: Lic. Carolina Pampliega y Dra. Isabel Galli.">
@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
-   DEXIA KIDS, Sistema de diseño
-   Concepto: "de los sonidos a las letras", pizarra + tiza.
+   DEXIA KIDS — Sistema de diseño
+   Concepto: "de los sonidos a las letras" — pizarra + tiza.
    Paneles oscuros tipo pizarra como puntuación del relato, sobre un fondo
    papel cálido. Tipografía serial editorial para títulos (lectura/escritura
    como tema), sans humanista para el cuerpo.
@@ -22,13 +22,13 @@
   /* color */
   --ink:        #1E2A2E;   /* texto principal */
   --ink-soft:   #44545A;   /* texto secundario */
-  --paper:      #FBF4EA;   /* fondo cálido */
-  --paper-alt:  #F3ECDF;   /* fondo cálido, paneles claros */
-  --pizarra:    #1F3D3A;   /* panel oscuro tipo pizarra */
-  --pizarra-2:  #16302D;   /* pizarra, variante más oscura */
-  --tiza-amarilla: #F4B740; /* acento primario */
-  --tiza-coral:    #E9694F; /* acento secundario */
-  --tiza-celeste:  #6FAFA6; /* acento terciario, eco de la pizarra */
+  --paper:      #FFFCF0;   /* fondo cálido */
+  --paper-alt:  #FFF4CC;   /* fondo cálido, paneles claros */
+  --pizarra:    #126B54;   /* panel oscuro tipo pizarra */
+  --pizarra-2:  #0A4F3D;   /* pizarra, variante más oscura */
+  --tiza-amarilla: #FFB82E; /* acento primario */
+  --tiza-coral:    #FF5A3C; /* acento secundario */
+  --tiza-celeste:  #1FC4AE; /* acento terciario, eco de la pizarra */
   --linea:      rgba(30,42,46,0.12);
   --linea-clara: rgba(251,244,234,0.22);
 
@@ -71,7 +71,7 @@ p{margin:0 0 1.1em;}
 .section{padding:84px 0;}
 .section--tight{padding:56px 0;}
 .section--pizarra{background:var(--pizarra);color:#F4EEE2;}
-.section--pizarra h1,.section--pizarra h2,.section--pizarra h3{color:#FBF4EA;}
+.section--pizarra h1,.section--pizarra h2,.section--pizarra h3{color:#FFFCF0;}
 .section--alt{background:var(--paper-alt);}
 
 .eyebrow{
@@ -129,6 +129,7 @@ p{margin:0 0 1.1em;}
 .nav-toggle{display:none;background:none;border:0;padding:8px;cursor:pointer;}
 .nav-toggle svg{display:block;width:26px;height:26px;color:var(--pizarra-2);}
 
+.nav-btn{padding:9px 18px !important;font-size:14px !important;white-space:nowrap;}
 @media (max-width:880px){
   .nav{
     position:fixed;inset:84px 0 0 0;background:var(--paper);
@@ -138,7 +139,7 @@ p{margin:0 0 1.1em;}
   }
   .nav.is-open{opacity:1;pointer-events:auto;transform:translateY(0);}
   .nav a{width:100%;padding:14px 0;border-bottom:1px solid var(--linea);}
-  .nav-cta{flex-direction:row;margin-top:18px;}
+  .nav .nav-btn{margin-top:16px;align-self:flex-start;}
   .nav-toggle{display:inline-flex;}
 }
 
@@ -146,12 +147,12 @@ p{margin:0 0 1.1em;}
 .btn{
   display:inline-flex;align-items:center;gap:8px;
   padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;
-  background:var(--pizarra);color:#FBF4EA;border:1px solid var(--pizarra);
+  background:var(--pizarra);color:#FFFCF0;border:1px solid var(--pizarra);
   transition:transform .15s ease, box-shadow .15s ease;
 }
 .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);}
 .btn--ghost{background:transparent;color:var(--pizarra);border-color:var(--pizarra);}
-.section--pizarra .btn--ghost{color:#FBF4EA;border-color:rgba(251,244,234,0.5);}
+.section--pizarra .btn--ghost{color:#FFFCF0;border-color:rgba(251,244,234,0.5);}
 .btn--coral{background:var(--tiza-coral);border-color:var(--tiza-coral);}
 
 .store-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:22px;}
@@ -183,7 +184,7 @@ p{margin:0 0 1.1em;}
 
 /* ---------- quote / pizarra panel ---------- */
 .quote-panel{
-  background:var(--pizarra);color:#FBF4EA;border-radius:24px;
+  background:var(--pizarra);color:#FFFCF0;border-radius:24px;
   padding:48px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;
 }
 @media (max-width:760px){.quote-panel{grid-template-columns:1fr;text-align:left;padding:32px;}}
@@ -191,7 +192,7 @@ p{margin:0 0 1.1em;}
 .quote-mark{font-family:var(--font-display);font-size:64px;color:var(--tiza-amarilla);line-height:0.5;display:block;margin-bottom:8px;}
 .quote-panel blockquote{font-family:var(--font-display);font-size:21px;margin:0 0 16px;line-height:1.45;}
 .quote-cite{font-size:14px;color:#C9D6CF;}
-.quote-cite strong{color:#FBF4EA;display:block;font-size:15px;}
+.quote-cite strong{color:#FFFCF0;display:block;font-size:15px;}
 
 /* ---------- cards / grid ---------- */
 .grid{display:grid;gap:28px;}
@@ -245,11 +246,9 @@ p{margin:0 0 1.1em;}
 .accordion-icon{flex:0 0 auto;width:22px;height:22px;color:var(--ink-soft);transition:transform .2s ease;}
 .accordion-item[open] .accordion-icon{transform:rotate(45deg);}
 .accordion-body{padding:0 4px 26px;color:var(--ink-soft);}
-.accordion-body ul{padding-left:0;list-style:none;}
-.accordion-body li{padding:7px 0 7px 26px;position:relative;}
-.accordion-body li::before{
-  content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--tiza-celeste);
-}
+.accordion-body ul{padding-left:1.4em;list-style:disc;margin:6px 0;}
+.accordion-body li{padding:5px 0;color:var(--ink-soft);line-height:1.55;}
+.accordion-body li::marker{color:var(--tiza-celeste);font-size:1.1em;}
 .accordion-item > summary{list-style:none;}
 .accordion-item > summary::-webkit-details-marker{display:none;}
 
@@ -290,7 +289,8 @@ p{margin:0 0 1.1em;}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:36px;}
 @media (max-width:760px){.footer-grid{grid-template-columns:1fr;gap:28px;}}
 .footer-grid h4{color:#fff;font-family:var(--font-body);font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px;}
-.footer-grid li{padding:6px 0;font-size:15px;}
+.footer-grid ul{list-style:none;padding-left:0;margin:0;}
+.footer-grid li{padding:5px 0;font-size:15px;}
 .social-row{display:flex;gap:14px;margin-top:18px;}
 .social-row a{
   width:38px;height:38px;border-radius:50%;border:1px solid var(--linea-clara);
@@ -325,7 +325,7 @@ p{margin:0 0 1.1em;}
 .letter-blocks{display:flex;gap:16px;justify-content:center;}
 .letter-blocks span{
   width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-display);font-size:30px;font-weight:700;color:#FBF4EA;box-shadow:var(--shadow);
+  font-family:var(--font-display);font-size:30px;font-weight:700;color:#FFFCF0;box-shadow:var(--shadow);
 }
 .letter-blocks span:nth-child(1){background:var(--pizarra);transform:rotate(-6deg);}
 .letter-blocks span:nth-child(2){background:var(--tiza-coral);transform:rotate(4deg);}
@@ -355,7 +355,7 @@ p{margin:0 0 1.1em;}
 .nav-item:hover .caret,.nav-item.is-open .caret{transform:rotate(180deg);}
 
 .dropdown{
-  position:absolute;top:calc(100% + 10px);left:-16px;
+  position:absolute;top:100%;left:-16px;padding-top:12px;
   background:#fff;border-radius:var(--radius-sm);
   box-shadow:0 12px 32px -8px rgba(22,48,45,.25);
   border:1px solid var(--linea);
@@ -393,6 +393,12 @@ p{margin:0 0 1.1em;}
   }
 }
 
+
+/* ---------- app page 2-col: stack on mobile ---------- */
+@media (max-width:880px){
+  .app-intro-grid{grid-template-columns:1fr !important;}
+}
+
 </style>
 </head>
 <body>
@@ -426,9 +432,7 @@ p{margin:0 0 1.1em;}
 
       <a href="quienes-somos.html">Quiénes somos</a>
       <a href="contacto.html">Contacto</a>
-      <div class="nav-cta">
-        <a class="btn btn--coral" href="app.html#descargar">Descargar la app</a>
-      </div>
+      <a class="btn btn--coral nav-btn" href="app.html#descargar">Descargar la app</a>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -514,6 +518,7 @@ p{margin:0 0 1.1em;}
       <div>
         <h4>Contacto</h4>
         <ul>
+          <li><a href="mailto:pampliega.carolina@gmail.com">pampliega.carolina@gmail.com</a></li>
           <li><a href="contacto.html">Enviar un mensaje</a></li>
         </ul>
       </div>

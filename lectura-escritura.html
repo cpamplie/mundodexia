@@ -129,6 +129,7 @@ p{margin:0 0 1.1em;}
 .nav-toggle{display:none;background:none;border:0;padding:8px;cursor:pointer;}
 .nav-toggle svg{display:block;width:26px;height:26px;color:var(--pizarra-2);}
 
+.nav-btn{padding:9px 18px !important;font-size:14px !important;white-space:nowrap;}
 @media (max-width:880px){
   .nav{
     position:fixed;inset:84px 0 0 0;background:var(--paper);
@@ -138,7 +139,7 @@ p{margin:0 0 1.1em;}
   }
   .nav.is-open{opacity:1;pointer-events:auto;transform:translateY(0);}
   .nav a{width:100%;padding:14px 0;border-bottom:1px solid var(--linea);}
-  .nav-cta{flex-direction:row;margin-top:18px;}
+  .nav .nav-btn{margin-top:16px;align-self:flex-start;}
   .nav-toggle{display:inline-flex;}
 }
 
@@ -393,6 +394,11 @@ p{margin:0 0 1.1em;}
 }
 
 
+/* ---------- app page 2-col: stack on mobile ---------- */
+@media (max-width:880px){
+  .app-intro-grid{grid-template-columns:1fr !important;}
+}
+
 </style>
 <style>
   .habilidades-list{padding-left:20px;color:var(--ink-soft);margin:4px 0 0;}
@@ -456,9 +462,7 @@ p{margin:0 0 1.1em;}
 
       <a href="quienes-somos.html">Quiénes somos</a>
       <a href="contacto.html">Contacto</a>
-      <div class="nav-cta">
-        <a class="btn btn--coral" href="app.html#descargar">Descargar la app</a>
-      </div>
+      <a class="btn btn--coral nav-btn" href="app.html#descargar">Descargar la app</a>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -675,9 +679,6 @@ p{margin:0 0 1.1em;}
             <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;"><path d="M19.6 7.2a2.5 2.5 0 0 0-1.75-1.77C16.25 5 12 5 12 5s-4.25 0-5.85.43A2.5 2.5 0 0 0 4.4 7.2 26 26 0 0 0 4 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.75 1.77C7.75 19 12 19 12 19s4.25 0 5.85-.43a2.5 2.5 0 0 0 1.75-1.77A26 26 0 0 0 20 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3-5.2 3Z"/></svg>
             Acceder a la charla
           </a>
-          <div style="background:#fff;border-radius:10px;display:inline-block;padding:10px 18px;margin-top:18px;">
-            <img src="img/diagnostico-maipu.jpg" alt="Fundación Diagnóstico Maipú" style="height:48px;display:block;">
-          </div>
         </div>
       </div>
     </div>
@@ -711,7 +712,7 @@ p{margin:0 0 1.1em;}
       <div>
         <h4>Contacto</h4>
         <ul>
-          <li><a href="mailto:mundodexia@gmail.com">mundodexia@gmail.com</a></li>
+          <li><a href="mailto:pampliega.carolina@gmail.com">pampliega.carolina@gmail.com</a></li>
           <li><a href="contacto.html">Enviar un mensaje</a></li>
         </ul>
       </div>

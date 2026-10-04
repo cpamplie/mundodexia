@@ -129,6 +129,7 @@ p{margin:0 0 1.1em;}
 .nav-toggle{display:none;background:none;border:0;padding:8px;cursor:pointer;}
 .nav-toggle svg{display:block;width:26px;height:26px;color:var(--pizarra-2);}
 
+.nav-btn{padding:9px 18px !important;font-size:14px !important;white-space:nowrap;}
 @media (max-width:880px){
   .nav{
     position:fixed;inset:84px 0 0 0;background:var(--paper);
@@ -138,7 +139,7 @@ p{margin:0 0 1.1em;}
   }
   .nav.is-open{opacity:1;pointer-events:auto;transform:translateY(0);}
   .nav a{width:100%;padding:14px 0;border-bottom:1px solid var(--linea);}
-  .nav-cta{flex-direction:row;margin-top:18px;}
+  .nav .nav-btn{margin-top:16px;align-self:flex-start;}
   .nav-toggle{display:inline-flex;}
 }
 
@@ -431,9 +432,7 @@ p{margin:0 0 1.1em;}
 
       <a href="quienes-somos.html">Quiénes somos</a>
       <a href="contacto.html">Contacto</a>
-      <div class="nav-cta">
-        <a class="btn btn--coral" href="app.html#descargar">Descargar la app</a>
-      </div>
+      <a class="btn btn--coral nav-btn" href="app.html#descargar">Descargar la app</a>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -556,6 +555,7 @@ p{margin:0 0 1.1em;}
       <div>
         <h4>Contacto</h4>
         <ul>
+          <li><a href="mailto:pampliega.carolina@gmail.com">pampliega.carolina@gmail.com</a></li>
           <li><a href="contacto.html">Enviar un mensaje</a></li>
         </ul>
       </div>
