@@ -65,20 +65,54 @@ h1, h2, h3 {
 .redes a:hover { background: var(--indigo); }
 
 /* ===== Navegación ===== */
-.nav { margin-top: 1.25rem; background: var(--naranja); }
-.nav ul {
-  display: flex; list-style: none; overflow-x: auto;
-  scrollbar-width: none;
-}
-.nav ul::-webkit-scrollbar { display: none; }
-.nav li { flex: 1 0 auto; }
+.nav { margin-top: 1.25rem; background: var(--naranja); position: relative; z-index: 10; }
+.nav__lista { display: flex; list-style: none; }
+.nav__lista > li { flex: 1 0 auto; position: relative; }
 .nav a {
   display: block; text-align: center; white-space: nowrap;
   padding: .85rem 1.2rem;
   color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem;
 }
 .nav a:hover { background: rgba(255,255,255,.15); }
-.nav a[aria-current="page"] { background: var(--indigo); }
+.nav a[aria-current="page"], .nav .activo > a { background: var(--indigo); }
+.nav__sub {
+  display: none; list-style: none;
+  position: absolute; top: 100%; left: 0; min-width: 100%;
+  background: var(--naranja); border-top: 3px solid var(--indigo);
+  box-shadow: 0 10px 20px rgba(38,42,64,.18);
+}
+.nav__sub a { text-align: left; font-weight: 400; }
+.submenu:hover > .nav__sub, .submenu:focus-within > .nav__sub { display: block; }
+.submenu > a::after {
+  content: ""; display: inline-block; margin-left: .45rem; vertical-align: middle;
+  border: 5px solid transparent; border-top-color: currentColor; border-bottom: 0;
+}
+
+/* ===== Páginas interiores ===== */
+.pagina { padding: 3.5rem 0 4rem; }
+.pagina__grilla {
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 3rem; align-items: start;
+}
+.pagina h1 {
+  font-size: clamp(2.4rem, 5vw, 3.4rem); color: var(--naranja);
+  margin-bottom: 1.2rem;
+}
+.texto p { margin-bottom: 1.1rem; max-width: 62ch; }
+.texto h2 { font-size: 1.6rem; margin: 2rem 0 .6rem; }
+.texto a { font-weight: 700; }
+.destacado {
+  background: var(--rana-suave); border-left: 6px solid var(--rana);
+  padding: 1.2rem 1.4rem; border-radius: 0 14px 14px 0;
+  margin: 1.4rem 0; font-weight: 700; max-width: 62ch;
+}
+.nota { color: var(--gris); font-size: 1rem; margin-top: .9rem; }
+.fotos { display: grid; gap: 1.5rem; position: sticky; top: 1.5rem; }
+.fotos img {
+  width: 100%; border-radius: var(--radio);
+  height: auto; background: var(--naranja-suave);
+  box-shadow: 0 0 0 6px var(--rana-suave);
+}
 
 /* ===== Portada ===== */
 .portada { padding: 3.5rem 0 3rem; }
@@ -160,6 +194,15 @@ h1, h2, h3 {
   .app__rana { width: 130px; }
   .cita__libro { width: 120px; }
   .marca__lema { display: none; }
+  .pagina__grilla { grid-template-columns: 1fr; }
+  .fotos { position: static; }
+  .nav__lista { flex-wrap: wrap; }
+  .nav__lista > li { flex: 1 1 50%; }
+  .nav__lista > li.submenu { flex-basis: 100%; }
+  .nav__sub { display: flex; position: static; box-shadow: none; border-top: 0; background: rgba(0,0,0,.08); }
+  .nav__sub li { flex: 1; }
+  .nav__sub a { text-align: center; font-size: .92rem; }
+  .submenu > a::after { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
