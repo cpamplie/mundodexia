@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐸</text></svg>">
+<link rel="icon" type="image/jpeg" href="rana.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DEXIA KIDS, Estimulación temprana para leer y escribir en español</title>
 <meta name="description" content="DEXIA KIDS es una app gratuita de estimulación temprana para chicos de 3 a 8 años. Enseña a leer y escribir en español a partir de los sonidos.">
@@ -458,7 +458,7 @@ p{margin:0 0 1.1em;}
 
       <div class="hero-art">
         <div class="video-frame" style="border-radius:22px;overflow:hidden;box-shadow:0 20px 50px -18px rgba(10,79,61,.4);">
-          <iframe src="https://www.youtube.com/embed/zu9OEpm8Xig" title="DEXIA KIDS — Estimulación temprana de la lectoescritura" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/zu9OEpm8Xig?autoplay=1&mute=1&rel=0" title="DEXIA KIDS — Estimulación temprana de la lectoescritura" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -553,7 +553,7 @@ p{margin:0 0 1.1em;}
           <li><a href="index.html">Inicio</a></li>
           <li><a href="app.html">Dexia Kids App</a></li>
           <li><a href="lectura-escritura.html">Lectura y la Escritura</a></li>
-          <li></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
@@ -561,7 +561,6 @@ p{margin:0 0 1.1em;}
         <h4>Contacto</h4>
         <ul>
           <li><a href="contacto.html">Enviar un mensaje</a></li>
-          <li>Buenos Aires, Argentina</li>
         </ul>
       </div>
     </div>
@@ -573,7 +572,7 @@ p{margin:0 0 1.1em;}
 </footer>
 
 <script>
-// DEXIA KIDS, interacciones compartidas
+// DEXIA KIDS — interacciones compartidas
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -647,16 +646,13 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var name = form.name.value || '';
-      var email = form.email.value || '';
-      var message = form.message.value || '';
-      var subject = encodeURIComponent('DEXIA - Me gustaría recibir más información');
+      var name = (form.name && form.name.value) || '';
+      var message = (form.message && form.message.value) || '';
+      var subject = encodeURIComponent('DEXIA KIDS - Consulta desde el sitio web');
       var body = encodeURIComponent('Nombre: ' + name + '
 
-' + message + '
-
-(Responder a: ' + email + ')');
-      window.location.href = 'mailto:mundodexia@gmail.com?subject=' + subject + '&body=' + body;
+' + message);
+      window.location.href = 'mailto:pampliega.carolina@gmail.com?subject=' + subject + '&body=' + body;
     });
   }
 
