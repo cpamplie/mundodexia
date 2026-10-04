@@ -2,16 +2,17 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐸</text></svg>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lectura y escritura — DEXIA KIDS</title>
+<title>Lectura y escritura, DEXIA KIDS</title>
 <meta name="description" content="La importancia de la intervención temprana, habilidades de lectura esperadas por edad y señales de alerta de posible dislexia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
-   DEXIA KIDS — Sistema de diseño
-   Concepto: "de los sonidos a las letras" — pizarra + tiza.
+   DEXIA KIDS, Sistema de diseño
+   Concepto: "de los sonidos a las letras", pizarra + tiza.
    Paneles oscuros tipo pizarra como puntuación del relato, sobre un fondo
    papel cálido. Tipografía serial editorial para títulos (lectura/escritura
    como tema), sans humanista para el cuerpo.
@@ -490,7 +491,7 @@ p{margin:0 0 1.1em;}
           </a>
         </div>
         <div>
-          <img src="assets/img/cerebro-harvard.png" alt="Gráfico del Center on the Developing Child de Harvard University: Desarrollo del cerebro humano" style="border-radius:16px;border:1px solid var(--linea);">
+          <img src="cerebro-harvard.png" alt="Gráfico del Center on the Developing Child de Harvard University: Desarrollo del cerebro humano" style="border-radius:16px;border:1px solid var(--linea);">
           <p style="font-size:12px;color:var(--ink-soft);margin-top:8px;text-align:center;">Fuente: Center on the Developing Child, Harvard University (C.A. Nelson, 2000)</p>
         </div>
       </div>
@@ -646,11 +647,11 @@ p{margin:0 0 1.1em;}
 
           <div class="einstein-box">
             <p>"Todos somos unos genios. Pero si juzgas a un pez por su habilidad para escalar un árbol, vivirá su vida creyendo que es un tonto."</p>
-            <cite>— Albert Einstein</cite>
+            <cite>, Albert Einstein</cite>
           </div>
         </div>
 
-        <img src="assets/img/chico.png" alt="Niño con dificultades de lectura" style="border-radius:18px;box-shadow:var(--shadow);">
+        <img src="chico.png" alt="Niño con dificultades de lectura" style="border-radius:18px;box-shadow:var(--shadow);">
       </div>
     </div>
   </section>
@@ -663,7 +664,7 @@ p{margin:0 0 1.1em;}
 
       <div class="charla-card">
         <div>
-          <img src="assets/img/flyer-charla.png" alt="Flyer: Estimulación Temprana de la Lectoescritura — Fundación Diagnóstico Maipú y Mundo Dexia" class="flyer">
+          <img src="flyer-charla.png" alt="Flyer: Estimulación Temprana de la Lectoescritura, Fundación Diagnóstico Maipú y Mundo Dexia" class="flyer">
         </div>
         <div class="charla-meta">
           <p class="subtitle">Junto a Mundo Dexia</p>
@@ -674,7 +675,7 @@ p{margin:0 0 1.1em;}
             <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;"><path d="M19.6 7.2a2.5 2.5 0 0 0-1.75-1.77C16.25 5 12 5 12 5s-4.25 0-5.85.43A2.5 2.5 0 0 0 4.4 7.2 26 26 0 0 0 4 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.75 1.77C7.75 19 12 19 12 19s4.25 0 5.85-.43a2.5 2.5 0 0 0 1.75-1.77A26 26 0 0 0 20 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3-5.2 3Z"/></svg>
             Acceder a la charla
           </a>
-          <img src="assets/img/diagnostico-maipu.jpg" alt="Fundación Diagnóstico Maipú" class="dm-logo">
+          <img src="diagnostico-maipu.jpg" alt="Fundación Diagnóstico Maipú" class="dm-logo">
         </div>
       </div>
     </div>
@@ -722,7 +723,7 @@ p{margin:0 0 1.1em;}
 </footer>
 
 <script>
-// DEXIA KIDS — interacciones compartidas
+// DEXIA KIDS, interacciones compartidas
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -800,7 +801,11 @@ document.addEventListener('DOMContentLoaded', function () {
       var email = form.email.value || '';
       var message = form.message.value || '';
       var subject = encodeURIComponent('DEXIA - Me gustaría recibir más información');
-      var body = encodeURIComponent('Nombre: ' + name + '\n\n' + message + '\n\n(Responder a: ' + email + ')');
+      var body = encodeURIComponent('Nombre: ' + name + '
+
+' + message + '
+
+(Responder a: ' + email + ')');
       window.location.href = 'mailto:mundodexia@gmail.com?subject=' + subject + '&body=' + body;
     });
   }

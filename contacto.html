@@ -2,16 +2,17 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐸</text></svg>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contacto — DEXIA KIDS</title>
+<title>Contacto, DEXIA KIDS</title>
 <meta name="description" content="Escribinos a mundodexia@gmail.com o completá el formulario de contacto.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
-   DEXIA KIDS — Sistema de diseño
-   Concepto: "de los sonidos a las letras" — pizarra + tiza.
+   DEXIA KIDS, Sistema de diseño
+   Concepto: "de los sonidos a las letras", pizarra + tiza.
    Paneles oscuros tipo pizarra como puntuación del relato, sobre un fondo
    papel cálido. Tipografía serial editorial para títulos (lectura/escritura
    como tema), sans humanista para el cuerpo.
@@ -524,7 +525,7 @@ p{margin:0 0 1.1em;}
 </footer>
 
 <script>
-// DEXIA KIDS — interacciones compartidas
+// DEXIA KIDS, interacciones compartidas
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -602,7 +603,11 @@ document.addEventListener('DOMContentLoaded', function () {
       var email = form.email.value || '';
       var message = form.message.value || '';
       var subject = encodeURIComponent('DEXIA - Me gustaría recibir más información');
-      var body = encodeURIComponent('Nombre: ' + name + '\n\n' + message + '\n\n(Responder a: ' + email + ')');
+      var body = encodeURIComponent('Nombre: ' + name + '
+
+' + message + '
+
+(Responder a: ' + email + ')');
       window.location.href = 'mailto:mundodexia@gmail.com?subject=' + subject + '&body=' + body;
     });
   }
