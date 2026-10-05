@@ -401,28 +401,26 @@ p{margin:0 0 1.1em;}
 
 /* ---------- abanico de pantallas ---------- */
 .abanico{
-  position:relative;height:380px;display:flex;
-  justify-content:center;align-items:flex-end;
-  margin-top:48px;
+  position:relative;height:230px;
+  margin-top:36px;
 }
 .abanico-img{
   position:absolute;bottom:0;
-  width:260px;height:auto;
-  border-radius:18px;
-  box-shadow:0 22px 44px -12px rgba(18,107,84,.35);
-  transform:rotate(var(--rot,0deg));
+  width:220px;height:auto;
+  border-radius:14px;
+  box-shadow:0 16px 36px -8px rgba(18,107,84,.35);
   transform-origin:bottom center;
-  z-index:var(--z,1);
-  transition:transform .25s ease,box-shadow .25s ease,z-index 0s;
+  z-index:var(--z,2);
+  transition:transform .25s ease,box-shadow .25s ease;
 }
 .abanico-img:hover{
-  transform:rotate(var(--rot,0deg)) scale(1.08) translateY(-14px);
-  box-shadow:0 30px 56px -10px rgba(18,107,84,.45);
+  transform:var(--tf) scale(1.08) translateY(-12px) !important;
+  box-shadow:0 28px 48px -8px rgba(18,107,84,.5);
   z-index:10 !important;
 }
 @media(max-width:880px){
-  .abanico{height:260px;}
-  .abanico-img{width:170px;}
+  .abanico{height:160px;overflow:hidden;}
+  .abanico-img{width:150px;}
 }
 
 </style>
@@ -517,15 +515,15 @@ p{margin:0 0 1.1em;}
       <h2>Así se ve DEXIA KIDS por dentro</h2>
       <p class="lede">Rimas, sílabas, letras y sonidos, presentados como un juego. Cada nivel suma un poco más de complejidad, al ritmo del chico.</p>
 
-      <div class="abanico" aria-label="Pantallas de la app DEXIA KIDS">
-        <img src="img/app-oraciones.jpg" alt="ORACIONES" class="abanico-img" style="--rot:-24deg;--z:1">
-        <img src="img/app-rimas.jpg"     alt="RIMAS"     class="abanico-img" style="--rot:-14deg;--z:2">
-        <img src="img/app-silabas.jpg"   alt="SÍLABAS"   class="abanico-img" style="--rot:-5deg; --z:3">
-        <img src="img/app-splash.jpg"    alt="DEXIA"     class="abanico-img" style="--rot:3deg;  --z:5">
-        <img src="img/app-letras.jpg"    alt="LETRAS"    class="abanico-img" style="--rot:12deg; --z:3">
-        <img src="img/app-sonidos.jpg"   alt="SONIDOS"   class="abanico-img" style="--rot:21deg; --z:2">
+      <div class="abanico" aria-label="Pantallas de la app DEXIA KIDS" style="max-width:820px;margin:36px auto 0;">
+        <img src="img/app-rimas.jpg"     alt="RIMAS"     class="abanico-img" style="left:calc(50% - 370px);--tf:rotate(-14deg);--z:1;transform:rotate(-14deg)">
+        <img src="img/app-silabas.jpg"   alt="SÍLABAS"   class="abanico-img" style="left:calc(50% - 260px);--tf:rotate(-8deg);--z:2;transform:rotate(-8deg)">
+        <img src="img/app-oraciones.jpg" alt="ORACIONES"  class="abanico-img" style="left:calc(50% - 148px);--tf:rotate(-3deg);--z:3;transform:rotate(-3deg)">
+        <img src="img/app-splash.jpg"    alt="DEXIA"     class="abanico-img" style="left:calc(50% - 50px);--tf:rotate(1deg);--z:5;transform:rotate(1deg)">
+        <img src="img/app-letras.jpg"    alt="LETRAS"    class="abanico-img" style="left:calc(50% + 58px);--tf:rotate(7deg);--z:3;transform:rotate(7deg)">
+        <img src="img/app-sonidos.jpg"   alt="SONIDOS"   class="abanico-img" style="left:calc(50% + 164px);--tf:rotate(13deg);--z:2;transform:rotate(13deg)">
       </div>
-    </div>
+      </div>
   </section>
 
   <!-- QUOTE -->
