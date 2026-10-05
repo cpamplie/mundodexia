@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ---------- resaltar link activo ---------- */
   var here = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a[href]').forEach(function (link) {
+  document.querySelectorAll('.nav a[href]:not(.btn)').forEach(function (link) {
     var target = link.getAttribute('href').split('/').pop().split('#')[0];
     if (target === here) link.classList.add('active');
   });
