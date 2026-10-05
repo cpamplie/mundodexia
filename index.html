@@ -399,6 +399,32 @@ p{margin:0 0 1.1em;}
   .app-intro-grid{grid-template-columns:1fr !important;}
 }
 
+/* ---------- abanico de pantallas ---------- */
+.abanico{
+  position:relative;height:380px;display:flex;
+  justify-content:center;align-items:flex-end;
+  margin-top:48px;
+}
+.abanico-img{
+  position:absolute;bottom:0;
+  width:260px;height:auto;
+  border-radius:18px;
+  box-shadow:0 22px 44px -12px rgba(18,107,84,.35);
+  transform:rotate(var(--rot,0deg));
+  transform-origin:bottom center;
+  z-index:var(--z,1);
+  transition:transform .25s ease,box-shadow .25s ease,z-index 0s;
+}
+.abanico-img:hover{
+  transform:rotate(var(--rot,0deg)) scale(1.08) translateY(-14px);
+  box-shadow:0 30px 56px -10px rgba(18,107,84,.45);
+  z-index:10 !important;
+}
+@media(max-width:880px){
+  .abanico{height:260px;}
+  .abanico-img{width:170px;}
+}
+
 </style>
 </head>
 <body>
@@ -484,19 +510,20 @@ p{margin:0 0 1.1em;}
     </div>
   </section>
 
-  <!-- VISTA PREVIA -->
+  <!-- PANTALLAS DE LA APP: abanico -->
   <section class="section">
     <div class="wrap">
       <p class="eyebrow">Educando a través del juego</p>
       <h2>Así se ve DEXIA KIDS por dentro</h2>
       <p class="lede">Rimas, sílabas, letras y sonidos, presentados como un juego. Cada nivel suma un poco más de complejidad, al ritmo del chico.</p>
-      <div class="shot-strip" style="margin-top:30px;">
-        <img src="https://static.wixstatic.com/media/8993c3_6ab1cbe81c7e472689291a5263c133bb~mv2.png/v1/fill/w_356,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_6ab1cbe81c7e472689291a5263c133bb~mv2.png" alt="Pantalla de la app DEXIA KIDS">
-        <img src="https://static.wixstatic.com/media/8993c3_7ecc49bc53a74d3ab8191db927d418aa~mv2.png/v1/fill/w_356,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_7ecc49bc53a74d3ab8191db927d418aa~mv2.png" alt="Pantalla de la app DEXIA KIDS">
-        <img src="https://static.wixstatic.com/media/8993c3_240201f1eb424642b64b82d54b7e2c66~mv2.png/v1/fill/w_356,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_240201f1eb424642b64b82d54b7e2c66~mv2.png" alt="Pantalla de la app DEXIA KIDS">
-        <img src="https://static.wixstatic.com/media/8993c3_e9097d61c4394b1aaded10de614585bf~mv2.png/v1/fill/w_250,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_e9097d61c4394b1aaded10de614585bf~mv2.png" alt="Pantalla de la app DEXIA KIDS">
-        <img src="https://static.wixstatic.com/media/8993c3_00d1a45cc1f949279de04c50868cca47~mv2.png/v1/fill/w_286,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_00d1a45cc1f949279de04c50868cca47~mv2.png" alt="Pantalla de la app DEXIA KIDS">
-        <img src="https://static.wixstatic.com/media/8993c3_3f689c8eae914ce6b4beee6ab9b3272a~mv2.png/v1/fill/w_212,h_356,al_c,q_85,enc_avif,quality_auto/8993c3_3f689c8eae914ce6b4beee6ab9b3272a~mv2.png" alt="Pantalla de la app DEXIA KIDS">
+
+      <div class="abanico" aria-label="Pantallas de la app DEXIA KIDS">
+        <img src="img/app-oraciones.jpg" alt="ORACIONES" class="abanico-img" style="--rot:-24deg;--z:1">
+        <img src="img/app-rimas.jpg"     alt="RIMAS"     class="abanico-img" style="--rot:-14deg;--z:2">
+        <img src="img/app-silabas.jpg"   alt="SÍLABAS"   class="abanico-img" style="--rot:-5deg; --z:3">
+        <img src="img/app-splash.jpg"    alt="DEXIA"     class="abanico-img" style="--rot:3deg;  --z:5">
+        <img src="img/app-letras.jpg"    alt="LETRAS"    class="abanico-img" style="--rot:12deg; --z:3">
+        <img src="img/app-sonidos.jpg"   alt="SONIDOS"   class="abanico-img" style="--rot:21deg; --z:2">
       </div>
     </div>
   </section>
