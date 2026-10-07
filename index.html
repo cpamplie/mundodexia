@@ -428,6 +428,11 @@ p{margin:0 0 1.1em;}
   .abanico-img{width:170px;}
 }
 
+/* abanico section vertical balance */
+.section--pizarra.section--tight .wrap{
+  display:flex;flex-direction:column;align-items:flex-start;
+}
+
 </style>
 </head>
 <body>
@@ -514,13 +519,13 @@ p{margin:0 0 1.1em;}
   </section>
 
   <!-- PANTALLAS DE LA APP: abanico -->
-  <section class="section section--pizarra">
+  <section class="section section--tight section--pizarra">
     <div class="wrap">
       <p class="eyebrow">Educando a través del juego</p>
       <h2>Así se ve DEXIA KIDS por dentro</h2>
       <p class="lede">Rimas, sílabas, letras y sonidos, presentados como un juego. Cada nivel suma un poco más de complejidad, al ritmo del chico.</p>
 
-      <div class="abanico" aria-label="Pantallas de la app DEXIA KIDS" style="max-width:1040px;margin:44px auto 0;">
+      <div class="abanico" aria-label="Pantallas de la app DEXIA KIDS" style="max-width:1040px;margin:12px auto 0;">
         <img src="img/app-rimas.jpg"     alt="RIMAS"     class="abanico-img" style="left:calc(50% - 490px);--tf:rotate(-16deg);--z:1;transform:rotate(-16deg)">
         <img src="img/app-silabas.jpg"   alt="SÍLABAS"   class="abanico-img" style="left:calc(50% - 340px);--tf:rotate(-9deg);--z:2;transform:rotate(-9deg)">
         <img src="img/app-oraciones.jpg" alt="ORACIONES"  class="abanico-img" style="left:calc(50% - 185px);--tf:rotate(-3deg);--z:3;transform:rotate(-3deg)">
