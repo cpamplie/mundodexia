@@ -162,7 +162,7 @@ p{margin:0 0 1.1em;}
 
 /* ---------- hero ---------- */
 .hero{padding:64px 0 40px;}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start;}
 @media (max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:36px;}}
 .hero h1{font-size:clamp(34px,4.6vw,56px);}
 .hero-art{position:relative;}
@@ -407,7 +407,7 @@ p{margin:0 0 1.1em;}
   overflow:visible;
 }
 .abanico-img{
-  position:absolute;bottom:0;
+  position:absolute;top:20px;
   width:290px;height:auto;
   border-radius:18px;
   box-shadow:0 20px 44px -8px rgba(0,0,0,.45);
@@ -434,6 +434,9 @@ p{margin:0 0 1.1em;}
 .team-card p{font-size:14px;line-height:1.55;}
 .team-card{gap:14px;}
 .team-card .role{width:44px;height:44px;font-size:16px;flex:0 0 44px;}
+
+/* abanico pizarra section: compact vertical spacing */
+.section--pizarra.section--tight{padding:40px 0 32px;}
 
 </style>
 </head>
@@ -481,7 +484,7 @@ p{margin:0 0 1.1em;}
   <section id="quienes-somos" class="section section--tight section--alt">
     <div class="wrap">
       <p class="eyebrow">Quiénes somos</p>
-      <h2 style="max-width:720px;">Si el niño no puede aprender de la forma en que se enseña, buscaremos desarrollar herramientas que enseñen de la forma en que <span class="chalk">ellos aprenden<svg viewBox="0 0 190 20" preserveAspectRatio="none"><path fill="none" d="M4 14 Q 48 2, 95 12 T 186 8"/></svg></span>.</h2>
+      <h2 style="max-width:720px;font-size:clamp(24px,2.6vw,30px);">Si el niño no puede aprender de la forma en que se enseña, buscaremos desarrollar herramientas que enseñen de la forma en que <span class="chalk">ellos aprenden<svg viewBox="0 0 190 20" preserveAspectRatio="none"><path fill="none" d="M4 14 Q 48 2, 95 12 T 186 8"/></svg></span>.</h2>
 
       <div class="grid grid--2" style="gap:36px;margin-top:36px;">
         <div class="card team-card">
@@ -508,7 +511,7 @@ p{margin:0 0 1.1em;}
   <section class="section">
     <div class="wrap">
       <p class="eyebrow">Contacto</p>
-      <h1 style="max-width:640px;">Escribinos, con gusto te <span class="chalk">respondemos<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path fill="none" d="M4 14 Q 50 2, 100 12 T 196 8"/></svg></span></h1>
+      <h1 style="max-width:640px;font-size:clamp(24px,2.6vw,30px);">Escribinos, con gusto te <span class="chalk">respondemos<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path fill="none" d="M4 14 Q 50 2, 100 12 T 196 8"/></svg></span></h1>
 
       <div class="contact-grid" style="margin-top:20px;">
         <div>
