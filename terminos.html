@@ -108,9 +108,9 @@ p{margin:0 0 1.1em;}
 .brand{display:flex;align-items:center;gap:12px;}
 .brand img{height:50px;width:auto;}
 .brand-tagline{display:none;}
-@media (min-width:1350px){
+@media (min-width:1200px){
   .brand-tagline{
-    display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+    display:block;font-size:15px;letter-spacing:.06em;text-transform:uppercase;
     color:var(--ink-soft);border-left:1px solid var(--linea);padding-left:14px;line-height:1.35;
   }
 }
@@ -437,6 +437,9 @@ p{margin:0 0 1.1em;}
 /* abanico pizarra section: compact vertical spacing */
 .section--pizarra.section--tight{padding:40px 0 32px;}
 
+.dropdown a.active{color:var(--ink-soft) !important;border-color:transparent !important;}
+.dropdown a.active::after{display:none !important;}
+
 </style>
 </head>
 <body>
@@ -664,7 +667,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ---------- resaltar link activo ---------- */
   var here = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a[href]:not(.btn)').forEach(function (link) {
+  /* active link: only top-level nav links, never dropdown sub-items */
+  document.querySelectorAll('.nav > a[href]:not(.btn), .nav-item > a.nav-parent[href]').forEach(function (link) {
     var target = link.getAttribute('href').split('/').pop().split('#')[0];
     if (target === here) link.classList.add('active');
   });
